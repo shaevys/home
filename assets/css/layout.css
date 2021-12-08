@@ -1,13 +1,4 @@
 @charset "utf-8";
-/*
-Template Name: Yammoe
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Layout CSS
-*/
 
 @import url("fontawesome-free/css/all.css");
 @import url("framework.css");
@@ -43,7 +34,7 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro{padding:200px 0;}
 
-#pageintro article{display:block; max-width:60%; margin:0 auto; text-transform:capitalize; text-align:center;}
+#pageintro article{display:block; max-width:60%; margin:0 auto; text-align:center;}
 #pageintro article p:first-of-type{margin:0 0 30px 0; padding:0; font-size:2rem;}
 #pageintro .heading{font-size:5rem;}
 #pageintro footer{margin-top:50px;}
