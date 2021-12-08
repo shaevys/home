@@ -5,32 +5,14 @@
 	<title>Commandes BOT LunatiK</title>
 
 	<style type="text/css">
-	blink {
-		-webkit-animation: 1s linear infinite condemed_blink_effect; 
-		animation: 1s linear infinite condemed_blink_effect;
-		}
-		@-webkit-keyframes condemed_blink_effect { 
-		0% {
-			visibility: hidden;
-		}
-		50% {
-			visibility: hidden;
-		}
-		100% {
-			visibility: visible;
-		}
-		}
-		@keyframes condemed_blink_effect {
-		0% {
-			visibility: hidden;
-		}
-		50% {
-			visibility: hidden;
-		}
-		100% {
-			visibility: visible;
-		}
-	}
+	blink { -webkit-animation: 1s linear infinite condemed_blink_effect; 
+		animation: 1s linear infinite condemed_blink_effect; }
+	@-webkit-keyframes condemed_blink_effect {  0% { visibility: hidden; }
+		50% { visibility: hidden; }
+		100% { visibility: visible; } }
+	@keyframes condemed_blink_effect { 0% { visibility: hidden; }
+		50% { visibility: hidden; }
+		100% { visibility: visible; } }
 	</style>
 
 	<link rel="shortcut icon" href="./assets/images/ltkicon.png">
@@ -319,6 +301,15 @@
 					<p>Afffiche le profil d'un joueur LGeL</p>
 					<p><b>Utilisation</b>
 					<br>.lgel [pseudo] </p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 highlight">
+				<div class="h-caption"><h4><i class="fa fa-user-secret"></i>poll</h4></div>
+				<div class="h-body text-center">
+					<p>Crée un sondage</p>
+					<p><b>Utilisations</b>
+					<br>.poll [question] / [option 1] / [option 2] / ... (maximum 6 options) <br>
+					.sondage</p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-3 highlight">
