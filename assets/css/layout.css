@@ -1590,6 +1590,10 @@ table a,
     }
 }
 
+html {
+    cursor: url(../images/cursor.png), auto;
+}
+
 ::-moz-selection { 
     background: #ede0ff;
     color: #413652;
