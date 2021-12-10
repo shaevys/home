@@ -1,15 +1,4 @@
 @charset "utf-8";
-
-/*
-Template Name: Yammoe
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Layout CSS
-*/
-
 @import url("fontawesome-free/css/all.css");
 @import url("framework.css");
 
@@ -1599,4 +1588,14 @@ table a,
     .font-x3 {
         font-size: 1.8rem;
     }
+}
+
+::-moz-selection { 
+    background: #ede0ff;
+    color: #413652;
+}
+  
+::selection {
+    background: #ede0ff;
+    color: #413652;
 }
