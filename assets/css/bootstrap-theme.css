@@ -1,19 +1,15 @@
 @import url("fontawesome-free/css/all.css");
 
 /*******************************/
-
-
 /*         Navigation         */
-
-
 /*******************************/
 
 .navbar-inverse {
     border-radius: 0;
     background: rgba(0, 0, 0, .8);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    min-height: 100px;
-    padding-top: 25px;
+    min-height: 20px;
+    padding-top: 0px;
     margin-bottom: 0;
 }
 

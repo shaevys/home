@@ -12,6 +12,29 @@
 </head>
 
 <body class="home">
+    <!---------------------- Fixed navbar ---------------------->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Shaevys"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="./home/">Home</a></li>
+					<li><a href="#admincommand">Admin</a></li>
+					<li><a href="#ltkcommand">LTK</a></li>
+					<li><a href="#funcommand">Fun</a></li>
+					<li><a href="#socialcommand">Utiles / Sociales</a></li>
+					<li><a href="#musiccommand">Musique</a></li>
+					<li><a href="#avatarcommand">Avatar</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!---------------------- /.navbar ---------------------->
+
     <!---------------------- Header ---------------------->
     <header id="head">
         <div class="container">
@@ -24,7 +47,7 @@
     <!---------------------- /Header ---------------------->
 
     <!---------------------- Admin commands ---------------------->
-    <div class="jumbotron top-space">
+    <div id="admincommand" class="jumbotron top-space">
         <div class="container">
 
             <h2 class="text-center thin"><b>Commandes admin</b></h2>
@@ -60,7 +83,8 @@
     <!---------------------- /Admin commands ---------------------->
 
     <!---------------------- LTK commands ---------------------->
-    <div class="container">
+    <div id="ltkcommand"></div>
+    <div class="container top-space">
 
         <h2 class="text-center thin"><b>Commandes LTK</b></h2>
 
@@ -168,7 +192,7 @@
     <!---------------------- /LTK commands ---------------------->
 
     <!---------------------- Fun commands ---------------------->
-    <div class="jumbotron top-space">
+    <div id="funcommand" class="jumbotron top-space">
         <div class="container">
 
             <h2 class="text-center thin"><b>Commandes fun</b></h2>
@@ -358,7 +382,8 @@
     <!---------------------- /Fun commands ---------------------->
 
     <!---------------------- Social commands ---------------------->
-    <div class="container">
+    <div id="socialcommand"></div>
+    <div class="container top-space">
 
         <h2 class="text-center thin"><b>Commandes utiles/sociales</b></h2>
 
@@ -505,7 +530,7 @@
     <!---------------------- /Social commands ---------------------->
 
     <!---------------------- Music commands ---------------------->
-    <div class="jumbotron top-space">
+    <div id="musiccommand" class="jumbotron top-space">
         <div class="container">
 
             <h2 class="text-center thin"><b>Commandes musique (expérimental)</b></h2>
@@ -550,7 +575,8 @@
     <!---------------------- /Music commands ---------------------->
 
     <!---------------------- Avatar commands ---------------------->
-    <div class="container">
+    <div id="avatarcommand"></div>
+    <div class="container top-space">
 
         <h2 class="text-center thin"><b>Retouches / Overlays d'avatar</b></h2>
 

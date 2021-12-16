@@ -2,9 +2,9 @@
 #head {
 	background: #181015 url(https://www.zupimages.net/up/21/48/te4k.jpg) no-repeat;
 	background-size: cover;
-	min-height: 300px;
+	min-height: 400px;
 	text-align: center;
-	padding-top: 75px;
+	padding-top: 155px;
 	color: white;
 	font-family: "Open sans", Helvetica, Arial;
 	font-weight: 300;
@@ -165,7 +165,7 @@ ul.list-spaces li {
 }
 
 .top-space {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .top-margin {
