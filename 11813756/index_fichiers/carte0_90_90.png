@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Page non trouvée</title>
+<link href='//fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div align="center">
+<div style="padding-top:100px; font-family: 'Oswald', sans-serif; width:500px; text-align:left">
+<div style="float:left; width:150px">
+<span style="font-size:100px; color:#a53232">404</span><br />
+</div>
+<div style="float:right; width:350px; padding-top:30px">
+<span style="font-size:24px; color:#0E386A">Erreur...</span><br />
+<span style="font-size:18px; color:#5F89BB; font-style:italic">La page que vous cherchez n’existe pas…</span><br />
+<span style="font-size:14px; line-height:30px;">Vous pouvez <a href="/">retourner à l’accueil</a>.</span>
+</div>
+</div>
+</div>
+</body>
+</html>
