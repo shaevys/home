@@ -68,7 +68,7 @@ label{margin-bottom:5px;}
 
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:capitalize;}
+h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal;}
 .heading.nospace{margin-bottom:0;}
 
 address{font-style:normal; font-weight:normal;}
@@ -107,6 +107,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 /* Spacing
 --------------------------------------------------------------------------------------------------------------- */
+.btmspace-05{margin-bottom:0.5rem;}
 .btmspace-10{margin-bottom:10px;}
 .btmspace-15{margin-bottom:15px;}
 .btmspace-20{margin-bottom:20px;}
