@@ -3,8 +3,10 @@ function winLGtoggle(){
     var y = document.getElementById("win-sv");
     var z = document.getElementById("win-jdf");
 
+    /*
     y.style.display = "none";
     z.style.display = "none";
+    */
 
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -18,8 +20,10 @@ function winSVtoggle(){
     var y = document.getElementById("win-sv");
     var z = document.getElementById("win-jdf");
 
+    /*
     x.style.display = "none";
     z.style.display = "none";
+    */
 
     if (y.style.display === "none") {
         y.style.display = "block";
@@ -33,8 +37,10 @@ function winJDFtoggle(){
     var y = document.getElementById("win-sv");
     var z = document.getElementById("win-jdf");
 
+    /*
     x.style.display = "none";
     y.style.display = "none";
+    */
 
     if (z.style.display === "none") {
         z.style.display = "block";
