@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!-- base href="https://www.loups-garous-en-ligne.com/" -->
+    <title>Hameau « LunatiK » - Les Loups Garous de Thiercelieux, le jeu en Ligne</title>
+    <meta name="keywords" content="Loups Garous, Thiercelieux, jeux de société, jeu à rôles">
+    <script id="facebook-jssdk" src="index_fichiers/sdk.js"></script>
+    <script id="twitter-wjs" src="index_fichiers/widgets.js"></script>
+    <script async="" src="index_fichiers/analytics.js"></script>
+    <script type="text/javascript" src="index_fichiers/jquery.js"></script>
+    <script type="text/javascript" src="index_fichiers/js.js"></script>
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="index_fichiers/designInteractions.css">
+    <link type="text/css" href="index_fichiers/jquery-ui-1.8.20.custom.css" rel="Stylesheet">
+    <script type="text/javascript" src="index_fichiers/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="index_fichiers/jquery-ui-1.8.20.custom.min.js"></script>
+    <script type="text/javascript" src="index_fichiers/actions.js"></script>
+    <script type="text/javascript" src="index_fichiers/infobulle.js"></script>
+    <script>window.genre = 2;</script>
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="index_fichiers/design.css">
+    <link rel="stylesheet prefetch" href="index_fichiers/materialdesignicons.min.css">
+    <link rel="stylesheet" href="index_fichiers/jquery-ui.resizable.min.css">
+    <link rel="stylesheet" href="index_fichiers/hint.min.css">
+    <link rel="icon" type="image/x-icon" href="https://www.loups-garous-en-ligne.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://www.loups-garous-en-ligne.com/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Loups-Garous-en-Ligne">
+    <meta property="og:image" content="https://www.loups-garous-en-ligne.com/stuff/facebook/carte2.png">
+    <meta property="og:description" content="L'adaptation officielle en ligne du jeu Loups-Garous de Thiercelieux.">
+
+    <link href="index_fichiers/css_002.css" rel="stylesheet">
+    <link href="index_fichiers/tooltipster.min.css" rel="stylesheet">
+    <script type="text/javascript" src="index_fichiers/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-22928092-1', 'auto');
+        ga('send', 'pageview');
+
+
+    </script>
+    <link rel="stylesheet" href="index_fichiers/main.min.css">
+    <link href="index_fichiers/css.css" rel="stylesheet">
+</head>
+
+<body class="site  not-premium " onload="preloadImages();" data-hc="192">
+    <div id="all-talks"></div>
+
+    <div id="curseur" class="infobulle" style="visibility: hidden"></div>
+    <div class="background-village">
+        <div class="background-village-light background-village-light-left-1"></div>
+        <div class="background-village-light background-village-light-left-2"></div>
+        <div class="background-village-light background-village-light-left-3"></div>
+        <div class="background-village-light background-village-light-left-4"></div>
+        <div class="background-village-light background-village-light-left-5"></div>
+        <div class="background-village-light background-village-light-left-6"></div>
+        <div class="background-village-light background-village-light-right-1"></div>
+        <div class="background-village-light background-village-light-right-2"></div>
+        <div class="background-village-light background-village-light-right-3"></div>
+        <div class="background-village-light background-village-light-right-4"></div>
+    </div>
+    <div>
+        <section class="header-site">
+            <header>
+                <div class="barreJeux">
+                    <a href="http://www.celsius-online.com/" target="_blank" class="barreJeux_logoCelsius"></a>
+                    <div class="barreJeux_jeux">
+                        <div class="barreJeux_jeux_wrapper">
+                            <a href="http://www.lesroyaumes.com/Landing.php?ref=5234" target="_blank"
+                                class="jeu0">Royaumes Renaissants</a>
+                            <a href="http://www.primal-legends.com/" target="_blank" class="jeu1">Primal Legends</a>
+                            <a href="http://www.marchofhistory.com/" target="_blank" class="jeu2">March Of History</a>
+                            <a href="http://mutants.kobojo.com/" target="_blank" class="jeu3">Mutant Genetics
+                                Gladiators</a>
+                        </div>
+                    </div>
+                    <button class="barreJeux_boutonAgrandir" id="btnEnSavoirPlus">En savoir plus</button>
+                    <div class="barreJeux_detail" id="barreJeux_detail">
+                        <div class="barreJeux_detail_wrapper">
+                            <a href="http://www.lesroyaumes.com/Landing.php?ref=5234" target="_blank"
+                                class="jeu_detail jeu0">
+                                <div class="jeu_illustration"></div>
+                                <div class="jeu_texte">
+                                    <p>On négocie le prix de son blé, on trait ses vaches, on renverse le Comte et on
+                                        finit ivre à la taverne.
+                                        La vie tranquille au Moyen-Âge...</p>
+                                </div>
+                            </a>
+                            <a href="http://www.primal-legends.com/" target="_blank" class="jeu_detail jeu1">
+                                <div class="jeu_illustration"></div>
+                                <div class="jeu_texte">
+                                    <p>Composez votre armée de héros, affrontez les défis de Théria sur 300 niveaux et
+                                        faites face
+                                        aux joueurs du monde entier en temps réél dans l'arène !</p>
+                                </div>
+                            </a>
+                            <a href="http://www.marchofhistory.com/" target="_blank" class="jeu_detail jeu2">
+                                <div class="jeu_illustration"></div>
+                                <div class="jeu_texte">
+                                    <p>Mêlant à la fois stratégie en temps réel, gestion et diplomatie, March of History
+                                        vous plonge
+                                        d'abord dans l'Europe médiévale où vous incarnerez une famille de seigneurs bien
+                                        déterminés à perpétuer le
+                                        nom de leur Maison à travers le bruit et la fureur de l'Histoire depuis l'An Mil
+                                        jusqu'à l'Âge Nucléaire.</p>
+                                </div>
+                            </a>
+                            <a href="http://mutants.kobojo.com/" target="_blank" class="jeu_detail jeu3">
+                                <div class="jeu_illustration"></div>
+                                <div class="jeu_texte">
+                                    <p>Devenez le Psy-Captain légendaire ! Bienvenue dans l'arène ! Mettez à l'épreuve
+                                        vos capacités de
+                                        Psy-Captain, découvrez et faites progresser une grande variété de Mutants et
+                                        entrez dans l'arène pour
+                                        affronter les joueurs du monde entier !</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <span>100</span> personnes en ligne sur <span>2 403 545</span> inscrits -- <span>4 588</span> connectés
+                depuis 24 heures -- <span>8 752 354</span> parties ont déjà eu lieu
+            </header>
+            <section class="illustrationEntete">
+                <div class="moon">
+                </div>
+                <div id="blocSortieApp">
+                    <div class="iPhone">
+                        <img src="index_fichiers/sortieApp_3.png">
+                    </div>
+                    <p>Télécharger l'application sur
+                        <a target="_blank"
+                            href="https://play.google.com/store/apps/details?id=com.celsiusonline.lgel"><img
+                                src="index_fichiers/btnStoreGoogle.png" alt="Play Store"></a>
+                        <br>
+                        <a target="_blank"
+                            href="https://apps.apple.com/us/app/loups-garous-de-thiercelieux/id1542355105"><img
+                                src="index_fichiers/btnStoreApple.png" alt="App Store"></a>
+                    </p>
+                </div>
+                <a href="https://www.loups-garous-en-ligne.com/room" draggable="false">
+                    <img src="index_fichiers/header.png" alt="Bienvenue sur Loups-Garous en Ligne">
+                </a>
+            </section>
+            <nav>
+                <div></div>
+                <a class="link-btn-jouer" href="https://www.loups-garous-en-ligne.com/room">
+                    <button class="btn-jouer">
+                        <img src="index_fichiers/icon-wolf-head.png">JOUER
+                    </button>
+                </a>
+                <div class="button mini-news-button" data-tooltip="Mini-news" data-tooltip-position="top"
+                    style="display: none;">
+                    0
+                </div>
+                <a href="https://www.loups-garous-en-ligne.com/news" class="button news-button" data-tooltip="News"
+                    data-tooltip-position="top">
+                    <img class="nav-icon" src="index_fichiers/icon-news.png">
+                </a>
+                <article class="mini-news-tooltip bgdarkred shadow rounded" aria-hidden="true">
+                    <div class="close-button">×</div>
+                    <div class="mini-news-arrow"></div>
+                    <h3>Mini-news</h3>
+                    <div class="buttons_array bgred">
+                        <div class="mini-news-previous button array_clickable sound-tick">&lt;</div>
+                        <div class="buttons_array_text"></div>
+                        <div class="mini-news-next button array_clickable sound-tick">&gt;</div>
+                    </div>
+                    <p></p>
+                    <a href="https://www.loups-garous-en-ligne.com/mini_news" class="button">Voir toutes les
+                        mini-news</a>
+                </article>
+                <a class="nav-link before-jouer" href="https://www.loups-garous-en-ligne.com/animation">
+                    <img class="nav-icon" src="index_fichiers/icon-animation.png"><span>ANIMATION</span>
+                </a>
+                <a class="nav-link before-jouer" href="https://www.loups-garous-en-ligne.com/hameaux">
+                    <img class="nav-icon" src="index_fichiers/icon-house.png"><span>HAMEAUX</span>
+                </a>
+                <a class="nav-link" target="_blank" href="https://forum.loups-garous-en-ligne.com/">
+                    <img class="nav-icon" src="index_fichiers/icon-forum.png"><span>FORUM</span>
+                </a>
+                <a class="nav-link" href="https://www.loups-garous-en-ligne.com/boutique">
+                    <img class="nav-icon" src="index_fichiers/icon-boutique.png"><span>BOUTIQUE</span>
+                </a>
+            </nav>
+        </section>
+    </div>
+    <div id="body" class="yellow  is-premium">
+        <div id="flash-container">
+        </div>
+        <div class="hameau page-tabs">
+            <header>
+                <div class="hameau_modifiable hameau_banniere">
+                    <div class="hamlet-banner hamlet-border-1" style="background-image: url(LTK.png)">
+                    </div>
+                </div>
+                <h1 class="hameau_modifiable">
+                    LunatiK <small>[LTK]</small>
+                </h1>
+            </header>
+            <div class="tabs-content">
+                <div data-tab="hameau" style="display: block;">
+                    <div class="hameau_presentation">
+                        <aside>
+                            <div class="rounded bgbrown shadow">
+                                <input type="hidden" id="id_hameau" value="7032">
+                                <button class="button"
+                                    data-tooltip="Rejoindre le meilleur hameau LGEL">Rejoindre ce
+                                    hameau</button>
+                                <h3>
+                                    Membres (46/100)
+                                    <button class="show-help show_roles"
+                                        data-tooltip="Afficher l'aide sur les rôles">?</button>
+                                </h3>
+                                <ul class="hameau_membres">
+                                    <li class="role">Maire</li>
+                                    <li data-profile="Khrollo">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 59">[59]</small> Khrollo </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            35 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 28/12/2023 19:12:32">21H</i>
+                                    </li>
+                                    <li class="role">Adjoints (3)</li>
+                                    <li data-profile="Loupette22">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 95">[95]</small> Loupette22 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            23 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 18/12/2023 23:12:14">10J</i>
+                                    </li>
+                                    <li data-profile="Minario">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 61">[61]</small> Minario </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            8 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 18/12/2023 23:12:14">10J</i>
+                                    </li>
+                                    <li data-profile="Zinown">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 78">[78]</small> Zinown </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            8 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 28/12/2023 18:12:11">21H</i>
+                                    </li>
+                                    <li class="role">Habitants (42)</li>
+                                    <li data-profile="monstersv7">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 82">[82]</small> monstersv7 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            60 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 28/12/2023 20:12:53">20H</i>
+                                    </li>
+                                    <li data-profile="Yeetching">
+                                        <i class="status status-online" data-tooltip="Connecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 84">[84]</small> Yeetching </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            36 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 28/12/2023 19:12:32">21H</i>
+                                    </li>
+                                    <li data-profile="Miitsuha">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 74">[74]</small> Miitsuha </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            30 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 28/12/2023 18:12:36">21H</i>
+                                    </li>
+                                    <li data-profile="Souslik94">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 64">[64]</small> Souslik94 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            29 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 21/06/2022 22:06:46">1A</i>
+                                    </li>
+                                    <li data-profile="Darkmaine">
+                                        <i class="status status-online" data-tooltip="Connecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 66">[66]</small> Darkmaine </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            12 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 28/12/2023 20:12:15">20H</i>
+                                    </li>
+                                    <li data-profile="Shiffonz">
+                                        <i class="status status-online" data-tooltip="Connecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 83">[83]</small> Shiffonz </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            18 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 19/12/2023 18:12:22">9J</i>
+                                    </li>
+                                    <li data-profile="Viresss">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 71">[71]</small> Viresss </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            10 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 18/12/2023 23:12:15">10J</i>
+                                    </li>
+                                    <li data-profile="Didierchev">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 69">[69]</small> Didierchev </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            9 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 30/03/2023 01:03:10">8M</i>
+                                    </li>
+                                    <li data-profile="Majoyck">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 54">[54]</small> Majoyck </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            7 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 18/12/2023 23:12:15">10J</i>
+                                    </li>
+                                    <li data-profile="zazilol">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 69">[69]</small> zazilol </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 29/08/2021 20:08:50">2A</i>
+                                    </li>
+                                    <li data-profile="Ezooo">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 63">[63]</small> Ezooo </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 15/08/2023 22:08:50">4M</i>
+                                    </li>
+                                    <li data-profile="raviauliit">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 25">[25]</small> raviauliit </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 12/09/2023 21:09:16">3M</i>
+                                    </li>
+                                    <li data-profile="Treat">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 59">[59]</small> Treat </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 26/12/2020 13:12:45">3A</i>
+                                    </li>
+                                    <li data-profile="Capucine57">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 23">[23]</small> Capucine57 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 05/04/2021 21:04:23">2A</i>
+                                    </li>
+                                    <li data-profile="Arcade">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 50">[50]</small> Arcade </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 16/02/2023 22:02:28">10M</i>
+                                    </li>
+                                    <li data-profile="loubard145">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 75">[75]</small> loubard145 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 23/06/2023 20:06:51">6M</i>
+                                    </li>
+                                    <li data-profile="Brinsingr">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 62">[62]</small> Brinsingr </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 17/08/2022 22:08:45">1A</i>
+                                    </li>
+                                    <li data-profile="Enocea">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 67">[67]</small> Enocea </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 25/03/2022 12:03:38">1A</i>
+                                    </li>
+                                    <li data-profile="Wirus">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 40">[40]</small> Wirus </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 23/11/2021 18:11:22">2A</i>
+                                    </li>
+                                    <li data-profile="neutralsh">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 51">[51]</small> neutralsh </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 11/12/2022 19:12:58">1A</i>
+                                    </li>
+                                    <li data-profile="priscman">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 60">[60]</small> priscman </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 20/08/2023 18:08:26">4M</i>
+                                    </li>
+                                    <li data-profile="Douboux">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 61">[61]</small> Douboux </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 25/12/2023 18:12:12">3J</i>
+                                    </li>
+                                    <li data-profile="Maurine465">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 49">[49]</small> Maurine465 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 06/04/2022 14:04:11">1A</i>
+                                    </li>
+                                    <li data-profile="Twents">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 74">[74]</small> Twents </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 24/08/2023 23:08:51">4M</i>
+                                    </li>
+                                    <li data-profile="Duowine">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 44">[44]</small> Duowine </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 30/11/2022 23:11:24">1A</i>
+                                    </li>
+                                    <li data-profile="Caroo23">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 61">[61]</small> Caroo23 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 27/09/2023 16:09:13">3M</i>
+                                    </li>
+                                    <li data-profile="Zenith972">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 61">[61]</small> Zenith972 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 09/11/2023 08:11:58">1M</i>
+                                    </li>
+                                    <li data-profile="coklicot">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 58">[58]</small> coklicot </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 22/05/2022 20:05:21">1A</i>
+                                    </li>
+                                    <li data-profile="Vellichor">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 97">[97]</small> Vellichor </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 06/02/2023 23:02:07">10M</i>
+                                    </li>
+                                    <li data-profile="Ravioliii">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 75">[75]</small> Ravioliii </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 10/01/2022 18:01:53">1A</i>
+                                    </li>
+                                    <li data-profile="Laey">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 71">[71]</small> Laey </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 04/09/2023 19:09:58">3M</i>
+                                    </li>
+                                    <li data-profile="Mythes">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 64">[64]</small> Mythes </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 19/09/2021 11:09:19">2A</i>
+                                    </li>
+                                    <li data-profile="Bellini">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 66">[66]</small> Bellini </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 26/06/2021 23:06:57">2A</i>
+                                    </li>
+                                    <li data-profile="mfr21">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 68">[68]</small> mfr21 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 08/04/2023 23:04:44">8M</i>
+                                    </li>
+                                    <li data-profile="Accaliaa">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 68">[68]</small> Accaliaa </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 30/08/2021 22:08:09">2A</i>
+                                    </li>
+                                    <li data-profile="Pierrawoon">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 80">[80]</small> Pierrawoon </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 14/06/2023 19:06:24">6M</i>
+                                    </li>
+                                    <li data-profile="Shachm">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 70">[70]</small> Shachm </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 04/07/2022 16:07:47">1A</i>
+                                    </li>
+                                    <li data-profile="Singe87">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 78">[78]</small> Singe87 </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 19/06/2023 21:06:17">6M</i>
+                                    </li>
+                                    <li data-profile="Arckhan">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 65">[65]</small> Arckhan </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 17/06/2022 21:06:39">1A</i>
+                                    </li>
+                                    <li data-profile="Reditus">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 60">[60]</small> Reditus </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 30/08/2021 21:08:00">2A</i>
+                                    </li>
+                                    <li data-profile="Lyx">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 42">[42]</small> Lyx </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 16/08/2021 03:08:27">2A</i>
+                                    </li>
+                                    <li data-profile="Arzlantas">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 67">[67]</small> Arzlantas </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 29/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 07/06/2023 19:06:43">6M</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <article>
+                            <div class="hameau_presentation_generale">
+                                <h3>LunatiK</h3>
+                                <p class="hameau_creation">Date de création : 12 août 2020</p>
+                                <div class="presentation_general_avatar">
+                                    <div class="member" data-profile="Khrollo">
+                                        <div
+                                            class="apercu_personnage_rar apercu_personnage_rar__mini apercu_personnage_rar__homme apercu_personnage_rar__affiche">
+                                            <img style="z-index: 17000;" src="index_fichiers/mainGauche_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2001;"
+                                                src="index_fichiers/mainDroite_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10000;" src="index_fichiers/cheveuxAvants_2_c2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7207;"
+                                                src="index_fichiers/barbe_0_c5_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7206;"
+                                                src="index_fichiers/marques_2_p2_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7205;"
+                                                src="index_fichiers/sourcils_0_c5_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7204;"
+                                                src="index_fichiers/yeux_3_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7203;"
+                                                src="index_fichiers/iris_0_c0_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7202;"
+                                                src="index_fichiers/nez_0_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7201;"
+                                                src="index_fichiers/bouche_2_c0_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7200;"
+                                                src="index_fichiers/visage_0_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 7000; display: none;"
+                                                src="index_fichiers/cheveuxIntermediaires_2_c2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2002;"
+                                                src="index_fichiers/sousVetements_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2000;"
+                                                src="index_fichiers/corps_p2_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 1500;"
+                                                src="index_fichiers/cheveuxArrieres_2_c2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 10;"
+                                                src="index_fichiers/ombre_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2100;"
+                                                src="index_fichiers/braies_d10_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2200;"
+                                                src="index_fichiers/bottes_d10_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2650;"
+                                                src="index_fichiers/colAventurier_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2900;"
+                                                src="index_fichiers/epee_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"></div>
+                                        <p class="p-pseudo">Khrollo</p>
+                                        <p class="p-point">Maire</p>
+                                    </div>
+                                    <div class="member" data-profile="Loupette22">
+                                        <div
+                                            class="apercu_personnage_rar apercu_personnage_rar__mini apercu_personnage_rar__femme apercu_personnage_rar__affiche">
+                                            <img style="z-index: 17000;"
+                                                src="index_fichiers/mainGauche_p2_m0_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2001;"
+                                                src="index_fichiers/mainDroite_p2_m0_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10000;" src="index_fichiers/cheveuxAvants_6_c1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 7207; display: none;"
+                                                src="index_fichiers/barbe_0_c0_e3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7206;"
+                                                src="index_fichiers/marques_3_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7205;"
+                                                src="index_fichiers/sourcils_7_c1_e2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7204;"
+                                                src="index_fichiers/yeux_7_p2_e1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7203;"
+                                                src="index_fichiers/iris_0_c1_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7202;"
+                                                src="index_fichiers/nez_2_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7201;"
+                                                src="index_fichiers/bouche_7_c2_p2_e3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7200;"
+                                                src="index_fichiers/visage_4_p2_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 7000; display: none;"
+                                                src="index_fichiers/cheveuxIntermediaires_6_c1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2002;"
+                                                src="index_fichiers/sousVetements_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2000;"
+                                                src="index_fichiers/corps_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 1500;"
+                                                src="index_fichiers/cheveuxArrieres_6_c1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 10;"
+                                                src="index_fichiers/ombre_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2600;"
+                                                src="index_fichiers/col_d2_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2300;"
+                                                src="index_fichiers/jupe_d2_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2900;"
+                                                src="index_fichiers/epee_0_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 900;"
+                                                src="index_fichiers/noble_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10300;" src="index_fichiers/noble_1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2050;"
+                                                src="index_fichiers/bas_d10_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2200;"
+                                                src="index_fichiers/chausses_d5_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 990;"
+                                                src="index_fichiers/goeland_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"></div>
+                                        <p class="p-pseudo">Loupette22</p>
+                                        <p class="p-point">Adjointe</p>
+                                    </div>
+                                    <div class="member" data-profile="Minario">
+                                        <div
+                                            class="apercu_personnage_rar apercu_personnage_rar__mini apercu_personnage_rar__homme apercu_personnage_rar__affiche">
+                                            <img style="z-index: 17000;" src="index_fichiers/mainGauche_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2001;"
+                                                src="index_fichiers/mainDroite_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10000;" src="index_fichiers/cheveuxAvants_6_c3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7207;"
+                                                src="index_fichiers/barbe_4_c0_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7206;"
+                                                src="index_fichiers/marques_0_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7205;"
+                                                src="index_fichiers/sourcils_5_c0_e0_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7204;"
+                                                src="index_fichiers/yeux_6_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7203;"
+                                                src="index_fichiers/iris_0_c4_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7202;"
+                                                src="index_fichiers/nez_4_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7201;"
+                                                src="index_fichiers/bouche_5_c1_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7200;"
+                                                src="index_fichiers/visage_4_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 7000; display: none;"
+                                                src="index_fichiers/cheveuxIntermediaires_6_c3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2002;"
+                                                src="index_fichiers/sousVetements_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2000;"
+                                                src="index_fichiers/corps_p2_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 1500;"
+                                                src="index_fichiers/cheveuxArrieres_6_c3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 10;"
+                                                src="index_fichiers/ombre_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2300;"
+                                                src="index_fichiers/guenillesTunique_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2100;"
+                                                src="index_fichiers/braies_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2200;"
+                                                src="index_fichiers/bottes_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 900;"
+                                                src="index_fichiers/mantel_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2400;"
+                                                src="index_fichiers/mantel_d0_1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 800;"
+                                                src="index_fichiers/cape_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 1000;"
+                                                src="index_fichiers/robe_d10_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2330;"
+                                                src="index_fichiers/robe_d10_1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"></div>
+                                        <p class="p-pseudo">Minario</p>
+                                        <p class="p-point">Adjoint</p>
+                                    </div>
+                                    <div class="member" data-profile="Zinown">
+                                        <div
+                                            class="apercu_personnage_rar apercu_personnage_rar__mini apercu_personnage_rar__homme apercu_personnage_rar__affiche">
+                                            <img style="z-index: 17000;" src="index_fichiers/mainGauche_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2001;"
+                                                src="index_fichiers/mainDroite_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10000;" src="index_fichiers/cheveuxAvants_2_c2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7207;"
+                                                src="index_fichiers/barbe_4_c5_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7206;"
+                                                src="index_fichiers/marques_0_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7205;"
+                                                src="index_fichiers/sourcils_4_c0_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7204;"
+                                                src="index_fichiers/yeux_1_p2_e0_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7203;"
+                                                src="index_fichiers/iris_0_c3_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7202;"
+                                                src="index_fichiers/nez_7_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7201;"
+                                                src="index_fichiers/bouche_5_c0_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7200;"
+                                                src="index_fichiers/visage_1_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 7000; display: none;"
+                                                src="index_fichiers/cheveuxIntermediaires_2_c2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2002;"
+                                                src="index_fichiers/sousVetements_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2000;"
+                                                src="index_fichiers/corps_p2_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 1500;"
+                                                src="index_fichiers/cheveuxArrieres_2_c2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 10;"
+                                                src="index_fichiers/ombre_@1X_002.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2250;"
+                                                src="index_fichiers/guenillesBas_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2200;"
+                                                src="index_fichiers/chausses_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 900;"
+                                                src="index_fichiers/mantel_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2400;"
+                                                src="index_fichiers/mantel_d0_1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2350;"
+                                                src="index_fichiers/gilet_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 900;"
+                                                src="index_fichiers/chapeau_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10300;" src="index_fichiers/chapeau_d0_1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10370;" src="index_fichiers/fleur_d3_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"></div>
+                                        <p class="p-pseudo">Zinown</p>
+                                        <p class="p-point">Adjoint</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hameau_presentation_content">
+                                <div style="text-align: center"><img src="index_fichiers/v1er.png"></div><br>
+                                <br>
+                                <div style="text-align: center">
+                                    <font size="3"><b><span style="color: #19263F">Nightmares</span></b></font>
+                                    <font size="3"> <span style="color: #ffffff">_____</span><em>VS</em><span
+                                            style="color: #ffffff">_____</span> <b><span
+                                                style="color: #B4747A">Dreamers</span></b></font>
+                                    <font size="3"> <span style="color: #ffffff">_____</span><em>VS</em><span
+                                            style="color: #ffffff">_____</span> <b><span
+                                                style="color: #E8C500">Awaken</span></b></font><br>
+                                    <br>
+                                    <font size="2">Quizz du 24/08 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Bingo du 31/08 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Enigmes du 06/09 - Remportées par les <b><span
+                                                style="color: #19263F">Nightmares</span></b> <br>
+                                        Escape Game du 09/09 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b> <br>
+                                        Bingo du 13/09 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Petit Bac du 20/09 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b> <br>
+                                        Awards du 26/09 - Remportés par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Secret Lunatik du 27/09 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Escape Game du 04/10 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b> <br>
+                                        Animation du 10/10 - Remportée par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Blind Test du 11/10 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b> <br>
+                                        Bingo du 18/10 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Skribbl du 23/10 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Secret Lunatik du 26/10 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Escape Game du 01/11 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Bingo du 08/11 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Quizz du 18/11 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Blind Test du 20/11 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Blind Test dessins animés du 05/12 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        MDJ du 13/12 - Remportée par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Blind Test du 21/12 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Bingo du 06/01 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Cluedo-pendu du 16/01 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Tournoi Among Us du 09/01 au 28/01 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Blind Test du 14/02 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Animation écriture du 16/02 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Jeux lunatiques du 25/04 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Tournoi Pop Sauce du 29/04 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Animation Culture gé Geek du 14/06 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Pronos de l'Euro du 11/06 au 11/07 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Animation filée des Awards du 15/08 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Animation "Dernière semaine en Enfer" du 31/08 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Animation "Les Sacrifiés du LunatiK" du 01/09 au 19/09 - Remporté par les
+                                        <b><span style="color: #19263F">Nightmares</span></b><br>
+                                        Animation "Empoisonneur" du 24/09 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Code Name du 29/09 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Pop Sauce du 06/10 - Remporté par les <b><span
+                                                style="color: #B4747A">Dreamers</span></b><br>
+                                        Animation "Don't be the Nullos" du 07/10 au 23/10 - Remporté par les <b><span
+                                                style="color: #E8C500">Awaken</span></b><br>
+                                        Patate Chaude du 12/11 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Fresque murale du 27/11 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Animation "Soirée de Noël" du 19/12 - Remporté par les <b><span
+                                                style="color: #E8C500">Awaken</span></b><br>
+                                        Événement "Calendrier de l'Avent" du 01/12 au 24/12 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        Animation Écriture du 25/01 - Remporté par les <b><span
+                                                style="color: #19263F">Nightmares</span></b><br>
+                                        <br>
+                                        <br>
+                                    </font>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.isMaire = false;
+            window.isAdjoint = false;
+        </script>
+        <div class="footer-top"></div>
+    </div>
+    <footer>
+        <nav class="footer-nav">
+            <a href="https://www.loups-garous-en-ligne.com/cgu">Règles &amp; CGV</a>
+            <a href="https://www.loups-garous-en-ligne.com/staff">Équipe du site</a>
+            <span class="personal-data">Informations personnelles</span>
+            <a href="https://www.loups-garous-en-ligne.com/support">Support</a>
+            <img src="index_fichiers/vivox-logo.png" class="vivox" alt="Vivox">
+        </nav>
+        <div>
+            <p>Loups-garous-en-ligne.com a été agréé par les créateurs du jeu
+                Loups-garous de Thiercelieux, messieurs Philippe des Pallières et Hervé
+                Marly, ainsi que par les éditions Lui-même.</p>
+            <p>Ce site bénéficie d'une licence d'exploitation des noms, images,
+                contenus et concepts tirés du jeu. Toute utilisation dérivée pourra
+                entraîner des poursuites judiciaires.</p>
+        </div>
+    </footer>
+    <script src="index_fichiers/jquery-ui.min.js"></script>
+         <script type="text/javascript" src="index_fichiers/socket.io.min.js"></script>
+        <script type="text/javascript" src="index_fichiers/jquery.multi-select.js"></script>
+        <link rel="stylesheet" href="index_fichiers/multi-select.css">
+    <div id="tooltip" class="rounded" style="left: 0px; top: 0px;">
+        <div id="tooltip-arrow" style="left: 0px; top: 0px;"></div>
+        <div id="tooltip-content"></div>
+    </div>
+    <div id="achievement_tooltip" class="shadow"></div>
+
+    <script type="text/javascript" src="index_fichiers/plusone.js" gapi_processed="true">
+        { lang: 'fr' }
+    </script>
+    <div id="fox-link" style="display: none;">
+        "\/\/fox.loups-garous-en-ligne.com"</div>
+    <div id="fox-subscriptions-token" style="display: none;">
+        null </div>
+    <script type="text/javascript" src="index_fichiers/main.min.js"></script>
+
+
+    <div style="display: none; z-index: 1000; outline: 0px; position: absolute;"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1"
+        role="dialog" aria-labelledby="ui-dialog-title-dialog">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title"
+                id="ui-dialog-title-dialog">Loups-Garous-en-ligne</span><a href="#"
+                class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                    class="ui-icon ui-icon-closethick">close</span></a></div>
+        <div id="dialog" class="ui-dialog-content ui-widget-content"></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+            style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div>
+    </div>
+    <div style="display: none; z-index: 1000; outline: 0px; position: absolute;"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1"
+        role="dialog" aria-labelledby="ui-dialog-title-dialog_moderation">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title"
+                id="ui-dialog-title-dialog_moderation">Loups-Garous-en-ligne</span><a href="#"
+                class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                    class="ui-icon ui-icon-closethick">close</span></a></div>
+        <div id="dialog_moderation" class="ui-dialog-content ui-widget-content"></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+            style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div>
+    </div>
+    <div style="display: none; z-index: 1000; outline: 0px; position: absolute;"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1"
+        role="dialog" aria-labelledby="ui-dialog-title-dialog_cal">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title"
+                id="ui-dialog-title-dialog_cal">Loups-Garous-en-ligne</span><a href="#"
+                class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                    class="ui-icon ui-icon-closethick">close</span></a></div>
+        <div id="dialog_cal" class="ui-dialog-content ui-widget-content"></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+            style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div>
+    </div>
+</body>
+
+</html>
