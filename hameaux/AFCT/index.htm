@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!-- base href="https://www.loups-garous-en-ligne.com/" -->
+    <title>Hameau « Bovins » - Les Loups Garous de Thiercelieux, le jeu en Ligne</title>
+    <meta name="keywords" content="Loups Garous, Thiercelieux, jeux de société, jeu à rôles">
+    <link type="text/css" href="index_fichiers/jquery-ui-1.8.20.custom.css" rel="Stylesheet">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="index_fichiers/design.css">
+    <link rel="stylesheet prefetch" href="index_fichiers/materialdesignicons.min.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Loups-Garous-en-Ligne">
+    <meta property="og:description" content="L'adaptation officielle en ligne du jeu Loups-Garous de Thiercelieux.">
+
+    <link href="index_fichiers/css.css" rel="stylesheet">
+    <link href="index_fichiers/tooltipster.min.css" rel="stylesheet">
+    <script type="text/javascript" src="index_fichiers/jquery.tooltipster.min.js"></script>
+    <link rel="stylesheet" href="index_fichiers/main.min.css">
+    <link href="index_fichiers/css_002.css" rel="stylesheet">
+    <script charset="utf-8" src="index_fichiers/button.856debeac157d9669cf51e73a08fbc93.js"></script>
+</head>
+
+<body class="site  not-premium " onload="preloadImages();" data-hc="192">
+    <div id="curseur" class="infobulle" style="visibility: hidden"></div>
+    <div>
+        <section class="header-site">
+            <header>
+                <span>67</span> personnes en ligne sur <span>2 404 428</span> inscrits -- <span>4 396</span> connectés
+                depuis 24 heures -- <span>8 752 542</span> parties ont déjà eu lieu
+            </header>
+            <section class="illustrationEntete">
+                <div class="moon">
+                </div>
+                <a href="https://www.loups-garous-en-ligne.com/room" draggable="false">
+                    <img src="index_fichiers/header.png" alt="Bienvenue sur Loups-Garous en Ligne">
+                </a>
+            </section>
+            <nav>
+                <div></div>
+                <a class="link-btn-jouer" href="https://www.loups-garous-en-ligne.com/room">
+                    <button class="btn-jouer">
+                        <img src="index_fichiers/icon-wolf-head.png">JOUER
+                    </button>
+                </a>
+                <div class="button mini-news-button" data-tooltip="Mini-news" data-tooltip-position="top"
+                    style="display: none;">
+                    0
+                </div>
+                <a href="https://www.loups-garous-en-ligne.com/news" class="button news-button" data-tooltip="News"
+                    data-tooltip-position="top">
+                    <img class="nav-icon" src="index_fichiers/icon-news.png">
+                </a>
+                <article class="mini-news-tooltip bgdarkred shadow rounded" aria-hidden="true">
+                    <div class="close-button">×</div>
+                    <div class="mini-news-arrow"></div>
+                    <h3>Mini-news</h3>
+                    <div class="buttons_array bgred">
+                        <div class="mini-news-previous button array_clickable sound-tick">&lt;</div>
+                        <div class="buttons_array_text"></div>
+                        <div class="mini-news-next button array_clickable sound-tick">&gt;</div>
+                    </div>
+                    <p></p>
+                    <a href="https://www.loups-garous-en-ligne.com/mini_news" class="button">Voir toutes les
+                        mini-news</a>
+                </article>
+                <a class="nav-link before-jouer" href="https://www.loups-garous-en-ligne.com/animation">
+                    <img class="nav-icon" src="index_fichiers/icon-animation.png"><span>ANIMATION</span>
+                </a>
+                <a class="nav-link before-jouer" href="https://www.loups-garous-en-ligne.com/hameaux">
+                    <img class="nav-icon" src="index_fichiers/icon-house.png"><span>HAMEAUX</span>
+                </a>
+                <a class="nav-link" target="_blank" href="https://forum.loups-garous-en-ligne.com/">
+                    <img class="nav-icon" src="index_fichiers/icon-forum.png"><span>FORUM</span>
+                </a>
+                <a class="nav-link" href="https://www.loups-garous-en-ligne.com/boutique">
+                    <img class="nav-icon" src="index_fichiers/icon-boutique.png"><span>BOUTIQUE</span>
+                </a>
+            </nav>
+        </section>
+    </div>
+    <div id="body" class="yellow  not-premium">
+        <div id="flash-container">
+        </div>
+        <div class="hameau page-tabs">
+            <header>
+                <div class="hameau_modifiable hameau_banniere">
+                    <div class="hamlet-banner hamlet-border-2" style="background-image: url(index_fichiers/AFCT.gif)">
+                    </div>
+                </div>
+                <h1 class="hameau_modifiable">
+                    Bovins <small>[AFCT]</small>
+                </h1>
+            </header>
+            <div class="tabs-content">
+                <div data-tab="hameau" style="display: block;">
+                    <div class="hameau_presentation">
+                        <aside>
+                            <div class="rounded bgbrown shadow">
+                                <input type="hidden" id="id_hameau" value="6898">
+                                <button class="rejoindre_hameau button">Rejoindre ce hameau</button>
+                                <input type="hidden" id="already_in_hamlet" value="yes">
+                                <h3>
+                                    Membres (1/100)
+                                    <button class="show-help show_roles"
+                                        data-tooltip="Afficher l'aide sur les rôles">?</button>
+                                </h3>
+                                <ul class="hameau_membres">
+                                    <li class="role">Maire</li>
+                                    <li data-profile="Sanitaul">
+                                        <i class="status status-offline" data-tooltip="Déconnecté"></i>
+                                        <span>
+                                            <small data-tooltip="Niveau 38">[38]</small> Sanitaul </span>
+                                        <small data-tooltip="Points des 30 derniers jours (depuis le 30/11/2023)">
+                                            0 pts
+                                        </small>
+                                        <i class="member-activity"
+                                            data-tooltip="Dernière partie : 10/05/2021 00:05:48">2A</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <article>
+                            <div class="hameau_presentation_generale">
+                                <h3>Bovins</h3>
+                                <p class="hameau_creation">Date de création : 20 juin 2020</p>
+                                <div class="presentation_general_avatar">
+                                    <div class="member" data-profile="Sanitaul">
+                                        <div
+                                            class="apercu_personnage_rar apercu_personnage_rar__mini apercu_personnage_rar__femme apercu_personnage_rar__affiche">
+                                            <img style="z-index: 17000;" src="index_fichiers/mainGauche_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2001;"
+                                                src="index_fichiers/mainDroite_p2_m0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 10000;" src="index_fichiers/cheveuxAvants_6_c3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 7207; display: none;"
+                                                src="index_fichiers/barbe_0_c0_e1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7206;"
+                                                src="index_fichiers/marques_0_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7205;"
+                                                src="index_fichiers/sourcils_6_c0_e4_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7204;"
+                                                src="index_fichiers/yeux_0_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7203;"
+                                                src="index_fichiers/iris_0_c1_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7202;"
+                                                src="index_fichiers/nez_0_p2_e0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7201;"
+                                                src="index_fichiers/bouche_3_c0_p2_e1_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 7200;"
+                                                src="index_fichiers/visage_6_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img
+                                                style="z-index: 7000; display: none;"
+                                                src="index_fichiers/cheveuxIntermediaires_6_c3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2002;"
+                                                src="index_fichiers/sousVetements_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2000;"
+                                                src="index_fichiers/corps_p2_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 1500;"
+                                                src="index_fichiers/cheveuxArrieres_6_c3_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 10;"
+                                                src="index_fichiers/ombre_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2200;"
+                                                src="index_fichiers/bottes_d0_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2300;"
+                                                src="index_fichiers/jupe_d8_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 2600;"
+                                                src="index_fichiers/col_d8_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"><img style="z-index: 800;"
+                                                src="index_fichiers/cape_d8_0_@1X.webp"
+                                                class="res_1X apercu_personnage_rar__calque"></div>
+                                        <p class="p-pseudo">Sanitaul</p>
+                                        <p class="p-point">Maire</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hameau_presentation_content">
+                                <div style="text-align: center"><img src="index_fichiers/q9m3.png"></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.isMaire = false;
+            window.isAdjoint = false;
+        </script>
+        <div class="footer-top"></div>
+    </div>
+    <footer>
+        <nav class="footer-nav">
+            <a href="https://www.loups-garous-en-ligne.com/cgu">Règles &amp; CGV</a>
+            <a href="https://www.loups-garous-en-ligne.com/staff">Équipe du site</a>
+            <span class="personal-data">Informations personnelles</span>
+            <a href="https://www.loups-garous-en-ligne.com/support">Support</a>
+            <img src="index_fichiers/vivox-logo.png" class="vivox" alt="Vivox">
+        </nav>
+        <div>
+            <p>Loups-garous-en-ligne.com a été agréé par les créateurs du jeu
+                Loups-garous de Thiercelieux, messieurs Philippe des Pallières et Hervé
+                Marly, ainsi que par les éditions Lui-même.</p>
+            <p>Ce site bénéficie d'une licence d'exploitation des noms, images,
+                contenus et concepts tirés du jeu. Toute utilisation dérivée pourra
+                entraîner des poursuites judiciaires.</p>
+        </div>
+    </footer>
+    <script src="index_fichiers/jquery-ui.min.js"></script>
+    <div id="tooltip" class="rounded" style="left: 0px; top: 0px;">
+        <div id="tooltip-arrow" style="left: 0px; top: 0px;"></div>
+        <div id="tooltip-content"></div>
+    </div>
+    <div id="achievement_tooltip" class="shadow"></div>
+
+    <div style="display: none; z-index: 1000; outline: 0px; position: absolute;"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1"
+        role="dialog" aria-labelledby="ui-dialog-title-dialog">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title"
+                id="ui-dialog-title-dialog">Loups-Garous-en-ligne</span><a href="#"
+                class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                    class="ui-icon ui-icon-closethick">close</span></a></div>
+        <div id="dialog" class="ui-dialog-content ui-widget-content"></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+            style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div>
+    </div>
+    <div style="display: none; z-index: 1000; outline: 0px; position: absolute;"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1"
+        role="dialog" aria-labelledby="ui-dialog-title-dialog_moderation">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title"
+                id="ui-dialog-title-dialog_moderation">Loups-Garous-en-ligne</span><a href="#"
+                class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                    class="ui-icon ui-icon-closethick">close</span></a></div>
+        <div id="dialog_moderation" class="ui-dialog-content ui-widget-content"></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+            style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div>
+    </div>
+    <div style="display: none; z-index: 1000; outline: 0px; position: absolute;"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1"
+        role="dialog" aria-labelledby="ui-dialog-title-dialog_cal">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title"
+                id="ui-dialog-title-dialog_cal">Loups-Garous-en-ligne</span><a href="#"
+                class="ui-dialog-titlebar-close ui-corner-all" role="button"><span
+                    class="ui-icon ui-icon-closethick">close</span></a></div>
+        <div id="dialog_cal" class="ui-dialog-content ui-widget-content"></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se"
+            style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div>
+</body>
+</html>
